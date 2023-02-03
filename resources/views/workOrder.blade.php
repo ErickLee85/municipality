@@ -24,15 +24,15 @@
                         {{$full_order->created_at->diffForHumans()}}
                     </p>
                 </td>
-                @if($full_order->water == 1)
-                <td>Water</td>
-                @elseif($full_order->gas == 1)
-                <td>Gas</td>
-                @elseif($full_order->sewer == 1)
-                <td>Sewer</td>
-                @elseif($full_order->street == 1)
-                <td>Street</td>
-                @endif
+                    @if($full_order->water == 1)
+                    <td>Water</td>
+                    @elseif($full_order->gas == 1)
+                    <td>Gas</td>
+                    @elseif($full_order->sewer == 1)
+                    <td>Sewer</td>
+                    @elseif($full_order->street == 1)
+                    <td>Street</td>
+                    @endif
     
                 @isset($assignedEmployee)
                 <td>{{$assignedEmployee->name}}</td>

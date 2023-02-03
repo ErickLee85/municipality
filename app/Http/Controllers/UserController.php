@@ -117,16 +117,16 @@ class UserController extends Controller
             $workOrder->work_performed = $request->work_performed;
         }
 
-        if($request->department == "Water") {
+        if($request->department == "water") {
             $workOrder->water = 1;
         }
-        elseif($request->department == "Gas") {
+        elseif($request->department == "gas") {
             $workOrder->gas = 1;
         }
-        elseif($request->department == "Street") {
+        elseif($request->department == "street") {
             $workOrder->street = 1;
         }
-        elseif($request->department == "Sewer") {
+        elseif($request->department == "sewer") {
             $workOrder->sewer = 1;
         }
 
