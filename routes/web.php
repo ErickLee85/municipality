@@ -39,6 +39,7 @@ Route::get('/assignedWorkOrdersSort', [SearchAndSortController::class, 'assigned
 Route::post('/create/customer', [UserController::class, 'storeCustomer'])->middleware('auth');
 Route::get('/customers', [UserController::class, 'customers'])->name('customers')->middleware('auth');
 Route::get('/sortCustomers', [SearchandSortController::class, 'sortCustomers'])->middleware('auth');
+Route::get('/create/meter', [UserController::class, 'createMeter'])->middleware('auth');
 Route::get('/edit/{id}', [UserController::class, 'edit'])->middleware('auth');
 Route::put('/update/{id}', [UserController::class, 'update'])->middleware('auth');
 Route::middleware('auth')->group(function () {

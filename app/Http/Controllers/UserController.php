@@ -242,6 +242,15 @@ class UserController extends Controller
         
     }
 
+    public function createMeter () {
+        $customers = Customer::all();
+        $departments = Department::all();
+        return view('create.meter', [
+            'customers' => $customers,
+            'departments' => $departments
+        ]);
+    }
+
    
 
     
